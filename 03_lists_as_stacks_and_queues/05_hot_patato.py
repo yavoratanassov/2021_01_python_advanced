@@ -1,7 +1,7 @@
 from collections import deque
 
-players = "George Peter Michael William Thomas".split(" ")
-step = int("10")
+players = input().split(" ")
+step = int(input())
 
 q = deque(players)
 counter = 0
@@ -16,4 +16,3 @@ while len(q) > 1:
         q.append(current_player)
 
 print(f"Last is {q.popleft()}")
-
